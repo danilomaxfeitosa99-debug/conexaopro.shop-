@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heti Wellness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Manrope',sans-serif;color:#3b3228;background:#f9f6f1;line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+
+/* HEADER — COMPACTO, 1 LINHA */
+header{max-width:600px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px;border-bottom:1px solid #e6ddd0}
+.hdr-left{display:flex;align-items:center;gap:8px}
+.hdr-dot{width:6px;height:6px;border-radius:50%;background:#8b6f47}
+.hdr-name{font-size:13px;font-weight:600;letter-spacing:-.2px;color:#3b3228}
+.hdr-right{font-size:9px;color:#b5a48a;letter-spacing:1.5px;text-transform:uppercase;font-weight:400}
+
+.wrap{max-width:540px;margin:0 auto;padding:16px 20px 40px}
+
+/* LABEL */
+.label{display:inline-flex;align-items:center;gap:5px;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#8b6f47;margin-bottom:8px}
+.label::before{content:'';display:inline-block;width:14px;height:1px;background:#8b6f47}
+
+h1{font-family:'DM Serif Text',serif;font-size:23px;line-height:1.3;color:#2a1f14;margin-bottom:5px}
+.deck{font-size:14px;color:#8a7a66;margin-bottom:4px;font-weight:300}
+.byline{font-size:9px;color:#c4b8a4;margin-bottom:12px;letter-spacing:.3px}
+
+.hero{overflow:hidden;border-radius:4px;margin-bottom:3px}
+.hero img,.mid img{cursor:pointer;transition:opacity .3s}
+.hero img:hover,.mid img:hover{opacity:.88}
+.credit{font-size:8px;color:#d4c8b4;margin-bottom:14px}
+
+/* CTA — COMPACTO E ELEGANTE */
+.cta{text-align:center;margin:14px 0;padding:14px;border:1px solid #e0d5c4;border-radius:6px;background:#fdfbf7}
+.cta-txt{font-size:12px;color:#8a7a66;margin-bottom:7px;font-weight:300}
+.cta-btn{display:inline-block;background:#8b6f47;color:#fff;padding:9px 26px;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-radius:4px;transition:all .25s}
+.cta-btn:hover{background:#6d5636;transform:translateY(-1px);box-shadow:0 3px 12px rgba(139,111,71,.2)}
+.cta-sub{font-size:8px;color:#c4b8a4;margin-top:4px}
+
+.body p{margin-bottom:11px;font-weight:300;font-size:14.5px;color:#5a4d3e}
+.body strong{color:#2a1f14;font-weight:600}
+
+.mid{margin:14px 0;border-radius:4px;overflow:hidden}
+
+/* PULL QUOTE — SUTIL */
+.pq{margin:14px 0;padding:10px 14px;border-left:2px solid #c4a86c;font-family:'DM Serif Text',serif;font-size:15px;font-style:italic;color:#3b3228;line-height:1.5;background:#faf7f2;border-radius:0 4px 4px 0}
+.pq-src{font-family:'Manrope',sans-serif;font-size:9px;color:#b5a48a;font-style:normal;margin-top:3px;display:block}
+
+.disc{font-size:9px;color:#c4b8a4;margin-top:16px;padding-top:10px;border-top:1px solid #e6ddd0;line-height:1.5}
+
+footer{max-width:600px;margin:0 auto;padding:14px 20px;text-align:center;font-size:8px;color:#c4b8a4;border-top:1px solid #e6ddd0}
+footer a{color:#8b6f47;text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+@media(max-width:600px){h1{font-size:20px}.wrap{padding:12px 16px 30px}header{padding:10px 16px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="hdr-left"><span class="hdr-dot"></span><span class="hdr-name">Heti Wellness</span></div>
+<span class="hdr-right">Vasárnapi Melléklet</span>
+</header>
+
+<div class="wrap">
+
+<span class="label">Táplálkozás</span>
+
+<h1>A vasárnapi brunch szokás, amelyről egyre többen beszélnek Magyarországon</h1>
+<p class="deck">Egy hétköznapi gyümölcs, amelyet sokan másképp kezdtek fogyasztani.</p>
+<p class="byline"><span id="art-date"></span> · Heti Wellness Szerkesztőség</p>
+
+<figure class="hero">
+<a href="https://lp.conexaopro.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/presell19-banana-brunch-table-m5P2xA7A3FhM8HkhwULRNB.webp" alt="Reggeli banánnal"></a>
+</figure>
+<p class="credit">Fotó: Heti Wellness</p>
+
+<!-- CTA 1 — IMEDIATO -->
+<div class="cta">
+<p class="cta-txt">Egy rövid videóban bemutatják a módszer részleteit</p>
+<a href="https://lp.conexaopro.shop/preclick" class="cta-btn">Megnézem a videót →</a>
+<p class="cta-sub">Ingyenes tájékoztató tartalom</p>
+</div>
+
+<div class="body">
+
+<p>A <strong>banán</strong> évtizedek óta a magyarok egyik kedvenc gyümölcse. Mostanában azonban egyre több figyelmet kap egy különleges tulajdonsága: a benne található <strong>rezisztens keményítő</strong>, amely a kutatók szerint prebiotikus rostként működhet az emésztőrendszerben.</p>
+
+<figure class="mid">
+<a href="https://lp.conexaopro.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/presell19-woman-garden-reading-mu4RwvMmUhiDeyouT7chUQ.webp" alt="Nő a kertben"></a>
+</figure>
+
+<div class="pq">
+„A természetes megoldások iránti érdeklődés folyamatosan nő — az emberek egyre tudatosabban figyelnek arra, amit esznek."
+<span class="pq-src">— Táplálkozástudományi Szakértő</span>
+</div>
+
+<p>A módszer lényegét egy <strong>rövid videóban</strong> foglalták össze, amelyben szakértők ismertetik a tudományos hátteret és a gyakorlati alkalmazást.</p>
+
+<!-- CTA 2 -->
+<div class="cta">
+<p class="cta-txt">Ismerd meg a teljes módszert</p>
+<a href="https://lp.conexaopro.shop/preclick" class="cta-btn">Videó megtekintése →</a>
+<p class="cta-sub">Tájékoztató jellegű tartalom</p>
+</div>
+
+<p class="disc"><em><strong>Fontos:</strong> Ez a cikk kizárólag tájékoztató jellegű, és nem minősül orvosi tanácsadásnak. Az étrend-kiegészítők nem helyettesítik a változatos étrendet és az egészséges életmódot. Az egyéni eredmények változhatnak. Bármilyen étrendi változtatás előtt konzultáljon orvosával.</em></p>
+
+</div>
+</div>
+
+<footer>
+<p><a href="privacy.html">Adatvédelem</a> · <a href="terms.html">Feltételek</a></p>
+<p style="margin-top:3px">© 2026 Heti Wellness · CNPJ: 64.941.848/0001-06</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){var d=new Date(),m=['január','február','március','április','május','június','július','augusztus','szeptember','október','november','december'];document.getElementById('art-date').textContent=d.getFullYear()+'. '+m[d.getMonth()]+' '+d.getDate()+'.';});
+(function(){var q=window.location.search;if(!q)return;document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(!h||h.startsWith('#')||h.startsWith('mailto:'))return;a.setAttribute('href',h.includes('?')?h+'&'+q.substring(1):h+q)})})();
+</script>
+<script type="text/javascript" src="https://lp.conexaopro.shop/pretrack.js?rtkcmpid=69b96382642ee570a2f14f14"></script>
+</body>
+</html>
